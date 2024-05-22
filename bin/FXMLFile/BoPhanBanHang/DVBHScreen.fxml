@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="DVBH_parent" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DVBHScreenController">
+			
+	<top>
+		<fx:include source="Menu.fxml" />
+	</top>
+	
+	<left>
+		<fx:include source="TaskBar.fxml" />
+	</left>
+	
+	<center>
+		<fx:include source="DSMHSiteKinhDoanh/DSSite.fxml" />
+	</center>
+
+</BorderPane>

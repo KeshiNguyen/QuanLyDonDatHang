@@ -1,0 +1,6 @@
+#help {
+    -fx-background-color: #d1d1d1;
+    -fx-background-radius: 50%; /* Làm tròn các góc */
+    -fx-border-radius: 50%; /* Làm tròn các góc của viền */
+	-fx-effect:  dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 3, 0);
+}

@@ -1,0 +1,6 @@
+.avatar {
+    width: 100px; /* Đặt kích thước chiều rộng */
+    height: 100px; /* Đặt kích thước chiều cao */
+    border-radius: 50%; /* Bo hình ảnh thành hình tròn */
+    object-fit: cover; /* Đảm bảo hình ảnh sẽ hiển thị đầy đủ trong phạm vi của khung */
+}

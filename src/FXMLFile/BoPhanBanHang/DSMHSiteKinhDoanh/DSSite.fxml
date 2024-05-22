@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="800.0" style="-fx-background-color: #d1d1d1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DSSiteController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <Button layoutX="630.0" layoutY="566.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="117.0" style="-fx-background-color: #FA0707; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 3, 0);" text="Chi tiết mặt hàng" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="150.0" layoutY="31.0" prefHeight="30.0" prefWidth="239.0" text="DANH SÁCH MẶT HÀNG SITE KINH DOANH" textFill="#0b08ab" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="site_table" layoutX="25.0" layoutY="77.0" prefHeight="482.0" prefWidth="742.0" AnchorPane.bottomAnchor="88.0" AnchorPane.topAnchor="80.0">
+         <columns>
+            <TableColumn fx:id="merchandiseCode_col" prefWidth="109.0" text="Merchandise Code" />
+            <TableColumn fx:id="nameItem_col" prefWidth="156.0" text="Name Item" />
+            <TableColumn fx:id="quantity_col" prefWidth="63.0" text="Quantity" />
+            <TableColumn fx:id="unit_col" prefWidth="79.0" text="Unit" />
+            <TableColumn fx:id="image_col" prefWidth="144.0" text="Image" />
+            <TableColumn fx:id="describeItem_col" prefWidth="190.0" text="Describe Item" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

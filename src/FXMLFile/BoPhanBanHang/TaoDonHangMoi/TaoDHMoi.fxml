@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="800.0" style="-fx-background-color: #E5E5E5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TaoDHMoiController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="788.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <AnchorPane layoutX="174.0" layoutY="45.0" prefHeight="255.0" prefWidth="581.0" style="-fx-background-color: #E5E5E5;" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="45.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="40.0" layoutY="14.0" text="Danh sách mặt hàng trong đơn hàng" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="order_table" layoutX="12.0" layoutY="42.0" prefHeight="172.0" prefWidth="557.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0">
+                     <columns>
+                        <TableColumn fx:id="merchandiseCodeOrder_col" prefWidth="112.0" text="Merchandise Code" />
+                        <TableColumn fx:id="nameItemOrder_col" prefWidth="135.0" text="Name Item" />
+                        <TableColumn fx:id="quantityOrder_col" minWidth="0.0" prefWidth="106.0" text="Quantity Ordered" />
+                        <TableColumn fx:id="unitOrder_col" prefWidth="67.0" text="Unit" />
+                        <TableColumn fx:id="deliveryDateDesired_col" prefWidth="136.0" text="Delivery Date Desired" />
+                     </columns>
+                  </TableView>
+                  <Button layoutX="439.0" layoutY="222.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #FA0707; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 3, 0);" text=" Xoá mặt hàng" textFill="WHITE" fx:id="xoaMH_btn">
+                     <graphic>
+                        <FontAwesomeIconView fill="#0b08ab" glyphName="TRASH" size="15" />
+                     </graphic></Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="19.0" layoutY="232.0" prefHeight="307.0" prefWidth="740.0" style="-fx-background-color: #E5E5E5;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+               <children>
+                  <TableView fx:id="Site_table" layoutX="14.0" layoutY="190.0" prefHeight="255.0" prefWidth="581.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="145.0">
+                     <columns>
+                        <TableColumn fx:id="merchandiseCode_col" prefWidth="110.0" text="Merchandise Code" />
+                        <TableColumn fx:id="nameItem_col" minWidth="5.0" prefWidth="159.0" text="Name Item" />
+                        <TableColumn fx:id="quantity_col" prefWidth="61.0" text="Quantity" />
+                        <TableColumn fx:id="unit_col" prefWidth="84.0" text="Unit" />
+                        <TableColumn fx:id="describeItem_col" prefWidth="166.0" text="Describe Item" />
+                     </columns>
+                  </TableView>
+                  <Label alignment="CENTER" layoutX="262.0" layoutY="20.0" text="Danh sách mặt hàng trong Site" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="468.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="taoDH_btn" layoutX="609.0" layoutY="268.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #FA0707; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 3, 0);" text="Tạo đơn hàng" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="#0b08ab" glyphName="SAVE" size="15" />
+                     </graphic></Button>
+                  <Label alignment="CENTER" layoutX="153.0" layoutY="16.0" prefHeight="17.0" prefWidth="238.0" text="Danh sách mặt hàng trong Site">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="themMH_btn" layoutX="609.0" layoutY="232.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #FA0707; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 3, 0);" text="Thêm mặt hàng" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIconView fill="#0b08ab" glyphName="PLUS" size="15" />
+                     </graphic></Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="15.0" layoutY="73.0" prefHeight="227.0" prefWidth="153.0" style="-fx-background-color: #E5E5E5;" stylesheets="@TaoDHMoi.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="602.0" AnchorPane.topAnchor="73.0">
+               <children>
+                  <Label layoutX="18.0" layoutY="12.0" text="Thông tin chung" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="12.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="45.0" text="Tên đơn hàng" AnchorPane.leftAnchor="18.0" />
+                  <TextField fx:id="tenDH_textfield" layoutX="18.0" layoutY="65.0" prefHeight="29.0" prefWidth="117.0" AnchorPane.leftAnchor="18.0" />
+                  <Label layoutX="18.0" layoutY="102.0" text="Ghi chú đơn hàng" AnchorPane.leftAnchor="18.0" />
+                  <TextArea fx:id="ghiChu_textfield" layoutX="18.0" layoutY="121.0" prefHeight="92.0" prefWidth="117.0" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="refresh_btn" layoutX="15.0" layoutY="27.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" stylesheets="@../DSDonHangDaTao/DSDH.css" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="27.0">
+               <graphic>
+                  <FontAwesomeIconView fill="RED" glyphName="REFRESH" size="25" />
+               </graphic>
+            </Button>
+            <Button fx:id="help_btn" layoutX="64.0" layoutY="29.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="95.0" style="-fx-background-color: #d1d1d1; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 3, 0);" text="Help" textFill="RED">
+               <graphic>
+                  <FontAwesomeIconView fill="#0b08ab" glyphName="TRASH" size="20" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="353.0" layoutY="21.0" prefHeight="30.0" prefWidth="239.0" text="TẠO ĐƠN HÀNG MỚI" textFill="#0b08ab" AnchorPane.leftAnchor="280.5" AnchorPane.rightAnchor="280.5" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+.text-field {
+    -fx-border-color: black; /* Màu viền đen */
+    -fx-background-color:  white; /* Nền trắng */
+    -fx-border-radius: 0px; /* Vuông tại mọi góc */
+    -fx-padding: 5px; /* Khoảng cách giữa nội dung và biên của text field */
+}
+.text-area {
+    -fx-border-color: black; /* Màu viền đen */
+    -fx-background-color:  white; /* Nền trắng */
+    -fx-border-radius: 0px; /* Vuông tại mọi góc */
+    -fx-padding: 5px; /* Khoảng cách giữa nội dung và biên của text field */
+}

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="fontawesomefx-commons-9.1.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/openjfx-22.0.1_linux-x64_bin-sdk/lib-fontawesome/fontawesomefx-commons-9.1.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/openjfx-22.0.1_linux-x64_bin-sdk/lib-fontawesome/fontawesomefx-controls-9.1.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/openjfx-22.0.1_linux-x64_bin-sdk/lib-fontawesome/fontawesomefx-emojione-3.1.1-9.1.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/openjfx-22.0.1_linux-x64_bin-sdk/lib-fontawesome/fontawesomefx-fontawesome-4.7.0-9.1.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/openjfx-22.0.1_linux-x64_bin-sdk/lib-fontawesome/fontawesomefx-materialdesignfont-2.0.26-9.1.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/openjfx-22.0.1_linux-x64_bin-sdk/lib-fontawesome/fontawesomefx-materialicons-2.2.0-9.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

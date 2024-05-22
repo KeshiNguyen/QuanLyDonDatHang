@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="800.0" style="-fx-background-color: #d1d1d1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SuaDHController">
+  <children>
+    <AnchorPane layoutX="79.0" layoutY="44.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+      <children>
+        <TableView fx:id="table" prefHeight="469.0" prefWidth="742.0" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="71.0">
+          <columns>
+            <TableColumn fx:id="merchadiseCode_col" prefWidth="128.0" text="Merchadise Code" />
+            <TableColumn fx:id="nameItem_col" prefWidth="227.0" text="Name Item" />
+            <TableColumn fx:id="quantityOrdered_col" prefWidth="114.0" text="Quantity Ordered" />
+            <TableColumn fx:id="unit_col" prefWidth="88.0" text="Unit" />
+            <TableColumn fx:id="deliveryDateDesired_col" prefWidth="184.0" text="Delivery Date Desired" />
+          </columns>
+        </TableView>
+        <Button fx:id="changeMH_btn" layoutX="407.0" layoutY="570.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="176.0" style="-fx-background-color: #FA0707; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 3, 0);" text="Change" textFill="WHITE" AnchorPane.bottomAnchor="22.0" AnchorPane.rightAnchor="189.0" />
+        <Button fx:id="back_btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="127.0" style="-fx-background-color: #FA0707; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 3, 0);" text="Back" textFill="WHITE" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="37.0">
+          <graphic>
+            <FontAwesomeIconView fill="#0b08ab" glyphName="ARROW_LEFT" size="20" />
+          </graphic>
+        </Button>
+            <Button fx:id="save_btn" layoutX="634.0" layoutY="573.0" mnemonicParsing="false" prefHeight="30.0" text="Save" />
+      </children>
+    </AnchorPane>
+    <Label alignment="CENTER" layoutX="210.0" layoutY="40.0" prefHeight="30.0" prefWidth="239.0" text="DANH SÁCH MẶT HÀNG TRONG ĐƠN HÀNG " textFill="#0b08ab" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="30.0">
+      <font>
+        <Font name="System Bold" size="20.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>
